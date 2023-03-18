@@ -7,50 +7,34 @@
 
       <div class="carousel-inner">
 
-         {% for i in electronic %}
          <div class="carousel-item active">
             <div class="container">
                <h1 class="fashion_taital">Electronic</h1>
                <div class="fashion_section_2">
                   <div class="row">
+
+                     {% for i in electronic %}
                      <div class="col-lg-4 col-sm-4">
                         <div class="box_main">
-                           <h4 class="shirt_text">Laptop</h4>
-                           <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                           <div class="electronic_img"><img src="images/laptop-img.png"></div>
+                           <h4 class="shirt_text">{{i.name}}</h4>
+                           <p class="price_text">Start Price <span style="color: #262626;">$ {{i.price}}</span></p>
+                           <div class="electronic_img"><img src="/templates/static/{{i.image}}"></div>
                            <div class="btn_main">
                               <div class="buy_bt"><a href="#">Buy Now</a></div>
                               <div class="seemore_bt"><a href="#">See More</a></div>
                            </div>
                         </div>
                      </div>
-                     <div class="col-lg-4 col-sm-4">
-                        <div class="box_main">
-                           <h4 class="shirt_text">Mobile</h4>
-                           <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                           <div class="electronic_img"><img src="images/mobile-img.png"></div>
-                           <div class="btn_main">
-                              <div class="buy_bt"><a href="#">Buy Now</a></div>
-                              <div class="seemore_bt"><a href="#">See More</a></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-sm-4">
-                        <div class="box_main">
-                           <h4 class="shirt_text">Computers</h4>
-                           <p class="price_text">Start Price <span style="color: #262626;">$ 100</span></p>
-                           <div class="electronic_img"><img src="images/computer-img.png"></div>
-                           <div class="btn_main">
-                              <div class="buy_bt"><a href="#">Buy Now</a></div>
-                              <div class="seemore_bt"><a href="#">See More</a></div>
-                           </div>
-                        </div>
-                     </div>
+                     {% endfor %}
+
                   </div>
                </div>
             </div>
          </div>
 
+
+
+         <!-- not finished -->
          <div class="carousel-item">
             <div class="container">
                <h1 class="fashion_taital">Electronic</h1>
@@ -136,7 +120,9 @@
                </div>
             </div>
          </div>
-         {% endfor %}
+         <!-- not finished -->
+
+
 
       </div>
 
@@ -146,19 +132,6 @@
       <a class="carousel-control-next" href="#electronic_main_slider" role="button" data-slide="next">
          <i class="fa fa-angle-right"></i>
       </a>
-      
+
    </div>
 </div>
-<!-- electronic section end -->
-
-<!-- footer section start -->
-<!-- footer section end -->
-
-<!-- copyright section start -->
-<!-- copyright section end -->
-
-<!-- Javascript files-->
-
-</body>
-
-</html>
